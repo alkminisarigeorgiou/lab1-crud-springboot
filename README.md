@@ -1,2 +1,2 @@
 # lab1-crud-springboot
-Simple CRUD application for demonstartion of build automation and CI/CD integration
+Simple CRUD application for demonstartion of build automation and CI/CD integration using the Spring Boot Framework
