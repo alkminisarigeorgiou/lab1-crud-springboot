@@ -17,5 +17,5 @@
 ### Running the app using Docker:
 
 * Build image: `docker build -t mars_crud:latest .`
-* Run:         `docker run -p 8080:8080 resources:latest`
+* Run:         `docker run -p 8080:8080 mars_crud:latest`
 * Application: http://localhost:8080/resources
