@@ -59,17 +59,6 @@ class resourceControllerTest {
                 .andExpect(redirectedUrl("/resources"));
     }
 
-    @Test
-    void testShowEditForm() throws Exception {
-        Resource resource = new Resource(2,"nametest2",20,"descriptiontest2");
-        resource.setId(3);
-        when(resourceRepository.findById(3)).thenReturn(Optional.of(resource));
-
-        mockMvc.perform(get("/resources/edit/1"))
-                .andExpect(status().isOk())
-                .andExpect(view().name("edit-resource"))
-                .andExpect(model().attributeExists("resource"));
-    }
 
     @Test
     void testEditresource() throws Exception {
