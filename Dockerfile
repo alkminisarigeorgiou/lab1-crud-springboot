@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy built JAR into containers
-COPY target/lab1-crud-springboot*.jar app.jar
+COPY target/mars-crud-*.jar app.jar
 
 EXPOSE 8080
 
